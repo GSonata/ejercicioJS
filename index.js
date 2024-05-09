@@ -21,10 +21,10 @@ function calcularNota() {
         resultadoElement.classList.remove('hidden');
   
     if (notaFinal >= 5) {
-      resultadoElement.innerHTML = "Has aprobado " + nombre + ", con una nota de " + notaFinal;
+      resultadoElement.innerHTML = "Has aprobado " + nombre + ", con una nota de " + notaFinal.toFixed(2);
       resultadoElement.classList.add('aprobado');
     } else {
-      resultadoElement.innerHTML = "Has suspendido " + nombre + ", con una nota de " + notaFinal;
+      resultadoElement.innerHTML = "Has suspendido " + nombre + ", con una nota de " + notaFinal.toFixed(2);
       resultadoElement.classList.add('suspendido');
     }
   }
