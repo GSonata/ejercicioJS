@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+body{
+    background: linear-gradient(160deg, #339297,#E2F4F5);
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    border: none;
+    font-family: "Poppins", sans-serif;
+  }
+
+.container {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 96%;
+    height: 70%;
+    background: linear-gradient(180deg, #9ce0e4,#eef4f5);
+    padding:2vw;
+    border-bottom: 5px solid rgb(127, 168, 168);
+    border-top: 5px solid rgb(127, 168, 168);
+    box-shadow: 1px 3px 15px 0px rgba(0,0,0,1);
+  }
+
+  h1{
+    font-weight: 700;
+    position: relative;
+  }
+
+  h1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 69px;
+    background: rgb(127, 168, 168);
+  }
+
+  h1::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -5px;
+    height: 3px;
+    width: 69px;
+    background: rgb(127, 168, 168);
+  }
+
+  .inputContainer {
+    display: flex;
+    align-items: center;
+    padding: 0.5vw;
+  }
+
+  .inputContainer span{
+    color:red;
+  }
+
+  .inputContainer label {
+    flex: 1; 
+    text-align: left; 
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 15;
+  }
+
+  input::placeholder{
+    text-align: center;
+    color: #adafaf;
+    transition: color 0.2s ease;
+  }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+  .inputContainer input {
+    flex: 2;
+    width: 20vw;
+    max-width: 20vw;
+    min-width: 20vw;
+    padding: 0.4vw;
+    padding-left: 0.5vw;
+    transition: all 0.2 ease;
+    outline: none;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    border: 2px solid rgb(243, 242, 242);
+    border-bottom: 4px solid rgb(243, 242, 242);
+}
+
+.inputContainer input:focus,
+.inputContainer input:valid {
+    border: 2px solid rgb(26, 133, 133);
+    border-bottom: 4px solid rgb(26, 133, 133)
+}
+
+input:focus::placeholder{
+    text-align: center;
+    color: #ffffff;
+
+  }
+
+.inputContainer input:out-of-range{
+    border: 2px solid rgb(240, 151, 129);
+    border-bottom: 4px solid rgb(240, 151, 129)
+
+}
+
+.buttonContainer{
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: space-evenly;
+}
+
+#gradeForm{
+    background-color: white;
+    padding:2vw;
+    border: 2px solid rgb(127, 168, 168);
+    border-radius: 5px;
+    box-shadow: 1px 3px 8px 0px rgba(0,0,0,1);
+
+}
+  
+.hidden {
+    display: none;
+  }
+  
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+.aprobado {
+    background-color: lightgreen;
+  }
+  
+.suspendido, .nulo {
+    background-color: salmon;
+  }
+
+button, input{
+    font-family: "Poppins", sans-serif;
+}
+
+#calcularBoton{
+    background-color: aquamarine;
+    padding:0.50vw;
+    width: 36%;
+    outline: none;
+    border: none;
+    font-weight: 700;
+
+}
+
+#borrarBoton{
+    background-color: rgb(238, 85, 85);
+    color:white;
+    padding:0.50vw;
+    width: 36%;
+    border: none;
+    outline: none;
+    font-weight: 700;
+}
+
+.finalPagina{
+    margin-top: 2vw;
+}
