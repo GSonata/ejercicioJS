@@ -1,11 +1,14 @@
+
+
 function calcularNota() {
 
-    var nombre = document.getElementById('nombre').value;
-    var ejercicios = parseFloat(document.getElementById('ejercicios').value);
-    var teorico = parseFloat(document.getElementById('teorico').value);
-    var practico = parseFloat(document.getElementById('practico').value);
-    var proyecto = parseFloat(document.getElementById('proyecto').value);
-    var resultadoElement = document.getElementById('resultado');
+
+    var nombre = document.querySelector('#nombre').value;
+    var ejercicios = parseFloat(document.querySelector('#ejercicios').value);
+    var teorico = parseFloat(document.querySelector('#teorico').value);
+    var practico = parseFloat(document.querySelector('#practico').value);
+    var proyecto = parseFloat(document.querySelector('#proyecto').value);
+    var resultadoElement = document.querySelector('#resultado');
     resultadoElement.classList.remove("aprobado" , "suspendido","nulo")
 
     if((ejercicios>10 || ejercicios<0 || ejercicios==null) || (teorico>10 || teorico<0 || teorico==null) ||
@@ -17,7 +20,7 @@ function calcularNota() {
     
     var notaFinal = (ejercicios * 0.2) + (teorico * 0.2) + (practico * 0.3) + (proyecto * 0.3);
     
-    var resultadoElement = document.getElementById('resultado');
+    var resultadoElement = document.querySelector('#resultado');
         resultadoElement.classList.remove('hidden');
   
     if (notaFinal >= 5) {
@@ -31,11 +34,11 @@ function calcularNota() {
   }
   
   function borrar() {
-    var resultadoElement = document.getElementById('resultado');
+    var resultadoElement = document.querySelector('#resultado');
     resultadoElement.classList.remove("aprobado" , "suspendido","nulo")
     resultadoElement.classList.add('hidden');
   
-    var inputs = document.getElementsByTagName('input');
+    var inputs = document.querySelector('#input');
     for (var i = 0; i < inputs.length; i++) {
       inputs[i].value = '';
     }
@@ -43,12 +46,12 @@ function calcularNota() {
 
   function comprobarFormulario(){
 
-    var ejercicios = document.getElementById('ejercicios').value;
-    var teorico = document.getElementById('teorico').value;
-    var practico = document.getElementById('practico').value;
-    var proyecto = document.getElementById('proyecto').value;
+    var ejercicios = document.querySelector('#ejercicios').value;
+    var teorico = document.querySelector('#teorico').value;
+    var practico = document.querySelector('#practico').value;
+    var proyecto = document.querySelector('#proyecto').value;
 
-    var resultadoElement = document.getElementById('resultado');
+    var resultadoElement = document.querySelector('#resultado');
     resultadoElement.classList.remove("aprobado" , "suspendido","nulo","hidden")
 
     if(ejercicios.trim() === "" || teorico.trim() === "" || 
