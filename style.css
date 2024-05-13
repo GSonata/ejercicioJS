@@ -107,13 +107,11 @@ input::-webkit-inner-spin-button {
 input:focus::placeholder{
     text-align: center;
     color: #ffffff;
-
   }
 
 .inputContainer input:out-of-range{
     border: 2px solid rgb(240, 151, 129);
     border-bottom: 4px solid rgb(240, 151, 129)
-
 }
 
 .buttonContainer{
