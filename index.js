@@ -11,7 +11,7 @@ function calcularNota() {
     if((ejercicios>10 || ejercicios<0 || ejercicios==null) || (teorico>10 || teorico<0 || teorico==null) ||
       (practico>10 || practico<0 || practico==null) || (proyecto<0 || proyecto>10 || proyecto==null)){
         resultadoElement.classList.remove("hidden");
-        resultadoElement.innerHTML="Los valores marcados en rojo no son validos";
+        resultadoElement.textContent="Los valores marcados en rojo no son validos";
         resultadoElement.classList.add("nulo");
       }else{
     
